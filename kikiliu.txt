@@ -10,6 +10,4 @@ experience in cross-device development, cross-browser testing.
 2. Chrome is my first choice. As a developer, I love its developer tool 
 esp. "what you see is what you get" CSS editor; As a user, I enjoy its 
 compatibility. IE 10 is my second choice. In its developer tool, I can 
-easily test all the effects from IE7 to IE10. Nowaday, users can hardly 
-notice the features of browsers. In my eyes, performance is all that 
-matters.
+easily conduct testing from IE7 to IE10. As alternative, Safari wins my heart easily with its display of fonts. Overall, users can hardly notice the features of browsers and to most of them,  performance is all that matters.
