@@ -1,0 +1,35 @@
+/*generic setting*/
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: "Segoe UI","Segoe","Segoe 
+WP","Tahoma","Verdana","Arial","sans-serif";
+    font-size: 1.2em;
+    color: white;
+    background: #000 
+url(http://cullogo.com/full/wallpapers-website-background-free-abstract-1920x1200.jpg) 
+no-repeat top left;
+}
+
+a:link {
+    text-decoration: none;
+    border-bottom: 1px dashed white;
+    color: lightblue;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover, a:focus, a:active {
+    color: yellow;
+}
+
+abbr {
+    border-bottom: 1px dashed white;
+}

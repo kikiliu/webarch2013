@@ -1,0 +1,44 @@
+/*specific setting*/
+
+/*navigation menu*/
+.menu {
+	background-color: transparent;
+	float: left;
+	width: 95%;
+	margin-top: 40px;
+	margin-left: 30%;
+}
+.menu li {
+	float: left;
+	display: inline;
+	padding: 0 3em 0 0;
+	margin: 0;
+}
+
+.menu a {
+    border-bottom:solid;
+}
+
+/*left resume*/
+.main_resume {
+    float: left;
+    width: 60%;
+    margin-left:5%;
+}
+
+.main_resume h3 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+/*right misc info*/
+.sidebar {
+    float: left;
+    width: 30%;
+    margin-left:5%;
+}
+
+#my_pic img {
+    width: 225px;
+}
+
