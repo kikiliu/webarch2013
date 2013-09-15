@@ -1,0 +1,55 @@
+﻿/*specific setting*/
+
+.page_wrapper {
+    width: 960px;
+    height: 1300px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#intro {
+    background-color: #333333;
+    padding: 30px 30px 30px 30px;
+}
+
+#intro h1 {
+    color: white;
+}
+
+/*navigation*/
+.navbar-inner {
+    background-color: #333333;
+}
+
+.navbar-default .navbar-nav li a:focus,
+.navbar-default .navbar-nav li a:active,
+.navbar-default .navbar-nav li a:hover {
+    color: whitesmoke;
+}
+
+
+/*left resume*/
+
+.main_resume {
+    float: left;
+    width: 60%;
+    margin-left: 5%;
+}
+
+.main_resume h3 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+/*right misc info*/
+.sidebar {
+    float: left;
+    width: 30%;
+    margin-left: 5%;
+}
+
+#my_pic img {
+    width: 225px;
+    margin-top: 30px;
+}

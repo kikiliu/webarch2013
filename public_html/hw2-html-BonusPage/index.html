@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Welcome to Kiki's Homepage</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kiki Qi Liu" />
+    <meta name="description" content="School Project for Personal Homepage to practise CSS" />
+    <meta name="keywords" content="Kiki Liu, Qi Liu, Kiki Qi Liu, homepage, resume, CV, personal information, introduction" />
+    <meta name="robots" content="all" />
+    <link rel="stylesheet" href="RenderingAssets/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="RenderingAssets/default.css" />
+    <link rel="stylesheet" type="text/css" href="RenderingAssets/index.css" />
+
+</head>
+<body>
+    <!--main page-->
+    <div class="page_wrapper">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="navbar-inner">
+                <div class="container">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#edu">Education</a></li>
+                        <li><a href="#work">Work Experience</a></li>
+                        <li><a href="#pattern">Pattern</a></li>
+                        <li><a href="#volunteer">Volunteer Experience</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--End of menu-->
+
+        <div id="intro">
+            <header role="banner">
+                <h1>KiKi Qi Liu</h1>
+            </header>
+        </div>
+        <!--End of banner-->
+
+        <div class="main_resume" role="main">
+            <div class="summary" role="article">
+                <h2>
+                    <abbr title="Master of Information Management and System">MIMS</abbr>
+                    2015 at School of Information, UC Berkeley
+                </h2>
+                <ul>
+                    <li>Strong research background in Data Mining</li>
+                    <li>V1 search product delivery experience</li>
+                    <li>Passion in search related topics</li>
+                </ul>
+            </div>
+            <div id="edu" role="article">
+                <h3>Education</h3>
+                <h4>Master in Information Management and System</h4>
+                <p>University of California, Berkeley</p>
+                <p>Studied in Distributed Computing Applications and Infrastructure, Web Architecture, Business Fundamental, User Interface Design and Development, Effective Project Management etc.</p>
+                <h4>Master in Computational Linguistics</h4>
+                <p>Tsinghua University</p>
+                <p>Studied in information retrieval, data mining and natural language processing</p>
+            </div>
+            <div id="work" role="article">
+                <h3>Work Experience</h3>
+                <h4>Product Manager</h4>
+                <p>SOHU R&amp;D / Sogou.com</p>
+                <p>Designed and delivered inline answer project V1. Per use intension, vertical search results, such as shopping, real estate, map, Q&amp;A, microblog, were embedded in web search result page to improve information relevance.</p>
+                <h4>Program Manager Intern</h4>
+                <p>Microsoft Bing Shopping</p>
+                <p>Managed large-scale information labeling project by online crowdsourcing. Designed labeling interface and process to simplify work and maximize efficiency.</p>
+                <h4>Research Intern</h4>
+                <p>Microsoft Research Asia</p>
+                <p>Applied machine learning techniques to analyze commercial search logs of both US and Asia markets to automatic discover user intentions in different markets.</p>
+            </div>
+            <div id="pattern" role="article">
+                <h3>Pattern</h3>
+                <h4>Ranking Oriented Query Clustering and Applications [<a href="https://docs.google.com/viewer?url=patentimages.storage.googleapis.com/pdfs/US7962487.pdf">PDF</a>]</h4>
+                <ul>
+                    <li>Use words in URLs as feature from a subset of top search results to cluster user queries.</li>
+                    <li>Top-sized clusters are used for analysis and statistic purpose to understand user intention and optimize relevance.</li>
+                </ul>
+            </div>
+            <div id="volunteer" role="article">
+                <h3>Volunteer Experience</h3>
+                <h4>Flight Assistant Volunteer</h4>
+                <p>Angel Flight West</p>
+                <p>Assist pilots with logistics (weight &amp; balance calculation, patient briefing, navigation etc.) and time-management in flight missions of patient transportation and blood transportation. Learn more about how to involve <a href="http://www.angelflightwest.org">Angle Flight West</a>.</p>
+            </div>
+        </div>
+        <!--End of resume-->
+
+        <div class="sidebar" role="complementary">
+            <div id="my_pic">
+                <img alt="kiki" src="http://www.ischool.berkeley.edu/files/_mg_4212_fu_ben_.jpg" />
+            </div>
+        </div>
+        <!--End of side bar-->
+        <div class="footer" role="note">
+        </div>
+    </div>
+</body>
+</html>

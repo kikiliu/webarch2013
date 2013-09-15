@@ -1,0 +1,26 @@
+﻿/*generic setting*/
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: "Verdana","Arial","sans-serif";
+    font-size: 1.2em;
+    color: #333333;
+    background-color: black;
+    min-height: 2000px;
+    padding-top: 70px;
+}
+
+
+a:visited {
+    color: grey;
+}
+
+a:hover, a:focus, a:active {
+    text-decoration-style:solid;
+}
+
