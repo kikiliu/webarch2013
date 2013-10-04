@@ -56,15 +56,13 @@ def wiki_put():
 # TODO: The representation for this resource is broken. Fix it!
 # Set the correct MIME type to be able to view the image in your browser
 ##/
-@app.route('/i253')
+@app.route('/i253', methods=['GET'])
 def i253():
     """Returns a PNG image of madlibs text"""
     relationship = request.args.get("relationship", "friend")
     name = request.args.get("name", "Jim")
     adjective = request.args.get("adjective", "fun")
-
-    resp = flask.make_response(
-            check_output(['convert', '-size', '600x400', 'xc:transparent',
+    bit_img = check_output(['convert', '-size', '600x400', 'xc:transparent',
                 '-frame', '10x30',
                 '-font', '/usr/share/fonts/liberation/LiberationSerif-BoldItalic.ttf',
                 '-fill', 'black',
@@ -72,9 +70,10 @@ def i253():
                 '-draw',
                   "text 30,60 'My %s %s said i253 was %s'" % (relationship, name, adjective),
                 '-raise', '30',
-                'png:-']), 200);
-    # Comment in to set header below
-    # resp.headers['Content-Type'] = '...'
+                'png:-'])
+    resp = flask.make_response(bit_img, 200); #respond with bit string and status code
+    # set header with content-type to display image
+    resp.headers['Content-Type'] = 'image/png'
 
     return resp
 
