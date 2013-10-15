@@ -1,0 +1,15 @@
+1. To get the gzip file:
+
+$ curl http://www.yelp.com -H "Accept-Encoding: gzip" > yelp.gzip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 18799    0 18799    0     0  54585      0 --:--:-- --:--:-- --:--:-- 56284
+
+2. To get the plain text file (gunzipped):
+
+$ curl http://www.yelp.com/  > yelp-unzip.gzip
+ % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 89643  100 89643    0     0   233k      0 --:--:-- --:--:-- --:--:--  239k
+
+3. The difference in size is 70844 Bytes
