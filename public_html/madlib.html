@@ -1,40 +1,70 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Madlib!</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-    </head>
-    <body>
-		<form id="madlib-input">
-			<p>Please Input your answers below!</p>
-			<!-- inputs... -->
-		</form>
-		
-		<div id="madlib-output">
-		</div>
+<head>
+    <meta charset="utf-8">
+    <title>Welcome to Kiki's Madlib!</title>
+    <meta name="description" content="Webarch2013 homework3">
+    <meta name="viewport" content="width=device-width">
+    <link type="text/css" rel="stylesheet" href="madlib.css" />
+</head>
+<body>
+    <div class="intro" role="banner">
+        <div>
+            <h1>Magic Crystal Ball</h1>
+            <p>Are you curious about how your iSchool life will be like for the coming week? Answer the questions below and the Maigc Crystal Ball will help you see the future!</p>
+        </div>
+        <div id="m_logo">
+            <img src="http://www.publiseek.com/publicity/wp-content/blogs.dir/sites/4/2012/12/crystal-ball.jpg" />
+        </div>
+    </div>
+    <form id="madlib-input">
+        <p>
+            <label for="nickname">
+                Your preferred nickname:
+            <input id="nickname" type="text" name="nickname"></label>
+        </p>
+        <p>
+            <label for="drink">
+                What kind of drink have you just had?<br>
+                <input type="radio" name="drink" value="coffee">Coffee of course, I need it to survive this iSchool program.<br>
+                <input type="radio" name="drink" value="tea">Tea, Fall in love with Tea-time.<br>
+                <input type="radio" name="drink" value="alcohol">Alcohol, I just came from TT(Thirsty Thursday).<br>
+                <input type="radio" name="drink" value="nothing particular">Maybe water, I'm too busy to remember.
+            </label>
+        </p>
+        <p>
+            <label for="course">What's your favourite course so far？(Hint: you gotta trust the default setting.)</label><br>
+            <select name="course" id="courses">
+                <option value="Info 253">Web Arch</option>
+                <option value="Info 202">A course with a lot of reading and discussion</option>
+                <option value="Info 206">A course you need to pass exam in order to enroll</option>
+            </select>
+        </p>
+        <p>
+            <label for="lucky_number">
+                What's your lucky number?
+                <input id="lucky_number" type="text" name="lucky_number"></label>
+        </p>
+        <p>
+            <label for="wishes">
+                Which of the choices below best describe your wishes?<br>
+                <input type="checkbox" name="wishes" value="excersing at Rec">Doing exercises at Rec.<br>
+                <input type="checkbox" name="wishes" value="hiking">Exploring trails near campus.<br>
+                <input type="checkbox" name="wishes" value="meditation">Doing meditation in front of South Hall.<br>
+                <input type="checkbox" name="wishes" value="knitting">Learning knitting with Molly.<br>
+                <input type="checkbox" name="wishes" value="movie">Enjoying Tuesday movie with fellow students.
+            </label>
+        </p>
+        <p>
+            <label>Let's see what the Magic Crystal Ball will tell you:
+                <input type="submit" value="Start"></label></p>
+    </form>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<!-- Optionally include other scripts
-        <script src="js/main.js"></script>
-		-->
+    <div id="madlib-output">
+        <p>Dear <span id="name_value"></span>, I saw you just have <span id="drink_value"></span>. It seems that you get used to life at Ischool. I believe you are working hard enough to get good score at <span id="info_value"></span>. Your wishes of <span id="wishes_value"></span> will be granted very soon as reward. You may meet <span id="lucky_value"></span> interesting people in the coming days. Please be confident and strong no matter how many assignments and projects will fall on you.</p>
+    </div>
 
-        <!-- You may add Javascript functions below -->
-        <script>
-			function validate() {
-				if ($("input:first").val() == "correct") {
-					$("#madlib-output").text("input: correct");
-				} else {
-					alert("Error!");
-				}
-				return false;
-			}
-
-			$(document).ready(function() {
-				$("#madlib-input").submit(validate);
-				console.log("ready!");
-			});
-        </script>
-    </body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="madlib.js"></script>    
+</body>
 </html>

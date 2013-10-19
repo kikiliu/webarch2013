@@ -1,0 +1,25 @@
+﻿/*generic setting*/
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: "Verdana","Arial","sans-serif";
+    font-size: 1.2em;
+    color: white;
+    background-color: black;
+    min-height: 2000px;
+    padding-top: 70px;
+}
+
+.intro #m_logo img{
+    width:500px;
+
+}
+
+#madlib-output {
+    display:none;
+}
