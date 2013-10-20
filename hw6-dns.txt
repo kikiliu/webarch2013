@@ -1,0 +1,20 @@
+1. IPs used by DNS server:
+199.7.83.42
+192.5.6.30
+208.78.70.18
+
+2. IP Addresses:
+m.yelp.com has address 198.51.132.34
+m.yelp.com has address 199.255.189.234
+m.yelp.com has address 198.51.132.234
+m.yelp.com has address 199.255.189.34
+
+3. No.
+$ traceroute amplab.cs.berkeley.edu
+
+traceroute to amplab.cs.berkeley.edu (128.32.37.248), 30 hops max, 60 byte packets
+ 1  g3-35.inr-211-srb.Berkeley.EDU (128.32.78.3)  1.064 ms  1.160 ms  1.055 ms
+ 2  t6-1.inr-202-reccev.Berkeley.EDU (128.32.255.126)  1.176 ms  1.075 ms  1.180 ms
+ 3  reccev-eecs-br-10GE.EECS.Berkeley.EDU (128.32.255.58)  2.456 ms  2.451 ms  2.397 ms
+ 4  soda-10g-edge.EECS.Berkeley.EDU (169.229.59.242)  2.569 ms  2.600 ms  2.624 ms
+ 5  www-research2.CS.Berkeley.EDU (128.32.37.248)  1.735 ms !X  1.795 ms !X  1.800 ms !X
