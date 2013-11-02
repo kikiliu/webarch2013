@@ -1,0 +1,46 @@
+1.mysql> SELECT count(*) FROM links WHERE created > "2013-10-14";
++----------+
+| count(*) |
++----------+
+|       10 |
++----------+
+1 row in set (0.00 sec)
+
+2.mysql> SELECT count(*) FROM links WHERE created < "2013-10-14" AND hit_count <40;
++----------+
+| count(*) |
++----------+
+|        3 |
++----------+
+1 row in set (0.00 sec)
+
+3.mysql> INSERT into links VALUES ("people.ischool.berkeley.edu/~kikiliu/webarch2013/","kikiliu",67,"2011-11-22");
+Query OK, 1 row affected (0.01 sec)
+
+4.It is not possible that anyone could see my insert partially complete. Its property of atomicity prevents the updates from partially happening.  
+
+5.First we need to use select to verify the rows we are operating on:
+
+mysql> SELECT * FROM links WHERE short_url = "kikiliu";
++---------------------------------------------------+-----------+-----------+------------+
+| long_url                                          | short_url | hit_count | created    |
++---------------------------------------------------+-----------+-----------+------------+
+| people.ischool.berkeley.edu/~kikiliu/webarch2013/ | kikiliu   |        67 | 2011-11-22 |
++---------------------------------------------------+-----------+-----------+------------+
+1 row in set (0.00 sec)
+
+Then update as follows:
+
+mysql> UPDATE links SET hit_count = 77 WHERE short_url = "kikiliu";
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+Check the new count:
+
+mysql> SELECT hit_count FROM links WHERE short_url = "kikiliu";
++-----------+
+| hit_count |
++-----------+
+|        77 |
++-----------+
+1 row in set (0.00 sec)
