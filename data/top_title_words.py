@@ -2,7 +2,7 @@
 
 This program will take a CSV data file and output tab-seperated lines of
 
-    Vroot -> number of visits
+    word -> number of visits
 
 To run:
 
@@ -22,7 +22,7 @@ class TopWords(MRJob):
         """Extracts the words in Vroot"""
         cell = csv_readline(line)
         if cell[0] == 'A':
-            for word in cell[3].split():
+            for word in cell[3].lower().split():
                 yield word, 1
 
     def reducer(self, word, counts):
